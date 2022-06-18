@@ -1,8 +1,9 @@
 import cors from "cors";
-import express, {json} from "express";
+import express, {json, Router} from "express";
 import {config} from "./config/config";
 import rateLimit from "express-rate-limit";
-import {FlashcardRecord} from './records/flashcard.record'
+import {flashcardRouter} from "./routers/flashcard.router";
+import {userRouter} from "./routers/user.router";
 
 
 const app = express();
@@ -18,10 +19,11 @@ app.use(rateLimit({
     max: 200,
 }));
 
-app.get('/', async (req, res) => {
-    res.send('Test');
-    await FlashcardRecord.addFlashcard('kapusta', 'rrr', 'ss', '58b03369-ed61-11ec-a0e7-1c666d8b4151');
-})
+const router = Router();
+router.use('/flashcard/', flashcardRouter);
+router.use('/user/', userRouter);
+
+app.use('/api', router)
 
 
 app.listen(3001, 'localhost', () => {

@@ -13,18 +13,25 @@ export class FlashcardRecord implements FlashcardEntity {
     status: string;
 
     constructor(obj: FlashcardEntity) {
+        this.id = obj.id;
+        this.front = obj.front;
+        this.back = obj.back;
+        this.category = obj.category;
+        this.status = obj.status;
     }
+
 
     static async getOneForUser(userId: string, flashcardId: string): Promise<FlashcardRecord | null> {
         const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=:status AND `id`=:id OR `status` = 'public' AND `id`=:id;", {
             status: userId,
             id: flashcardId,
         }) as FlashcardRecordResults;
+        console.log('co jest' + result[0]);
         return result.length === 0 ? null : new FlashcardRecord(result[0]);
     }
 
     static async findAllForUser(userId: string): Promise<FlashcardEntity[]> {
-        const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=:status OR `status` = '58b03369-ed61-11ec-a0e7-1c666d8b4151';", {
+        const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=:status OR `status` = 'public' ;", {
             status: userId,
         }) as FlashcardRecordResults;
         return result
@@ -38,6 +45,13 @@ export class FlashcardRecord implements FlashcardEntity {
             back: back,
             category: category,
             status: status,
+        })
+    }
+
+
+    static async removeFlashcard(id: string) {
+        await pool.execute('DELETE FROM `flashcards` WHERE `id` = :id;', {
+            id: id,
         })
     }
 }
