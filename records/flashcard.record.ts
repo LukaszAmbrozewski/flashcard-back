@@ -21,17 +21,24 @@ export class FlashcardRecord implements FlashcardEntity {
     }
 
 
-    static async getOneForUser(userId: string, flashcardId: string): Promise<FlashcardRecord | null> {
-        const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=:status AND `id`=:id OR `status` = 'public' AND `id`=:id;", {
-            status: userId,
-            id: flashcardId,
-        }) as FlashcardRecordResults;
-        console.log('co jest' + result[0]);
-        return result.length === 0 ? null : new FlashcardRecord(result[0]);
-    }
+    // static async getOneForUser(userId: string, flashcardId: string): Promise<FlashcardRecord | null> {
+    //     const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=':status' AND `id`=:id OR `status` = 'public' AND `id`=:id;", {
+    //         status: userId,
+    //         id: flashcardId,
+    //     }) as FlashcardRecordResults;
+    //     console.log(result[0]);
+    //     return result.length === 0 ? null : new FlashcardRecord(result[0]);
+    // }
 
     static async findAllForUser(userId: string): Promise<FlashcardEntity[]> {
         const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=:status OR `status` = 'public' ;", {
+            status: userId,
+        }) as FlashcardRecordResults;
+        return result
+    }
+
+    static async findOneRandomForUser(userId: string): Promise<FlashcardEntity[]> {
+        const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=:status OR `status` = 'public' ORDER BY RAND() LIMIT 1;", {
             status: userId,
         }) as FlashcardRecordResults;
         return result

@@ -16,6 +16,14 @@ export class UserRecord implements RegUserEntity {
         this.hashedPassword = obj.hashedPassword;
     }
 
+    static async addFlashcard(name: string, email: string, hashedPassword: string) {
+        await pool.execute("INSERT INTO `users` VALUES (:id, :name, :email, :hashedPassword);", {
+            id: uuid(),
+            name: name,
+            email: email,
+            hashedPassword: hashedPassword,
+        })
+    }
 
     static async getOneForId(id: string) {
         const [result] = await pool.execute("SELECT * FROM `users` WHERE `id`=:id", {
@@ -30,5 +38,4 @@ export class UserRecord implements RegUserEntity {
         })
         return result;
     }
-
 }
