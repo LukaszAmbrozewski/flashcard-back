@@ -42,10 +42,20 @@ app.use(passport.session());
 
 passport.use(new LocalStrategy((username: string, password: string, done) => {
         User.findOne({username: username}, (err: Error, user: DatabaseUserInterface) => {
-            if (err) throw err;
+            if (err) {
+                console.log(err)
+                console.log('Nie znaleziono użytkownika o takiej nazwie')
+                throw err;
+            }
+
             if (!user) return done(null, false);
             bcrypt.compare(password, user.password, (err, result: boolean) => {
-                if (err) throw err;
+                if (err) {
+                    console.log(err)
+                    console.log('Niepoprawne hasło')
+                    throw err;
+                }
+
                 if (result) {
                     return done(null, user);
                 } else {
@@ -87,22 +97,22 @@ app.use('/api/', router)
 app.post('/api/register', async (req, res) => {
     const {username, password} = req?.body;
     if (!username || !password || typeof username !== "string" || typeof password !== "string") {
-        console.log('Zarejestrowano nowego użytkownika')
         res.send("success");
         return;
     }
 
     User.findOne({username}, async (err: Error, doc: DatabaseUserInterface) => {
         if (err) throw err;
-        if (doc) res.send("User Already Exists");
+        if (doc) res.send("User Already Exists");   //Sprawdza czy użytkownik o takiej nazwie istnieje
         if (!doc) {
             const hashedPassword = await bcrypt.hash(password, 10);
             const newUser = new User({
                 username: username,
                 password: hashedPassword,
-            });
+            });   //stworzono obiekt nowego użytkownika
             await newUser.save();
-            res.send("Success")
+            res.send("Success")    //po zapisie wysłana odpowiedź ze success
+            console.log('Zarejestrowano nowego użytkownika')
         }
     })
 });

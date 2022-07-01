@@ -33,6 +33,14 @@ export const flashcardRouter = Router()
         res.json(data)
     })
 
+    .post('/add', async (req, res) => {
+        if (req.body) {
+            const {front, back, category, userId} = req.body
+            await FlashcardRecord.addFlashcard(front, back, category, userId)
+            res.json('success')
+        }
+    })
+
 
 // .get('/:id', async (req, res) => {
 //
