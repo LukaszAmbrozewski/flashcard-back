@@ -31,7 +31,7 @@ export class FlashcardRecord implements FlashcardEntity {
     // }
 
     static async findAllForUser(userId: string): Promise<FlashcardEntity[]> {
-        const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=:status OR `status` = 'public' ;", {
+        const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=:status OR `status` = 'public' ORDER BY `front` ASC;", {
             status: userId,
         }) as FlashcardRecordResults;
         return result

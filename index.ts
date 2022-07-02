@@ -97,7 +97,7 @@ app.use('/api/', router)
 app.post('/api/register', async (req, res) => {
     const {username, password} = req?.body;
     if (!username || !password || typeof username !== "string" || typeof password !== "string") {
-        res.send("success");
+        res.send("Success");
         return;
     }
 
@@ -178,5 +178,5 @@ app.get('/api/getallusers', async (req, res) => {
 
 
 app.listen(3001, 'localhost', () => {
-    console.log('Listening on http://localhost:3001')
+    console.log('Listening on 0.0.0.0:3001');
 });
