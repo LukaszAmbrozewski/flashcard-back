@@ -6,6 +6,7 @@
     "target": "es6",
     "downlevelIteration": true,
     "module": "CommonJS",
+    //Zmienia importy na require żeby były zrozumiałe dla JS
     "lib": [
       "es6"
     ],
