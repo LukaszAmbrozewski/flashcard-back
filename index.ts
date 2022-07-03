@@ -94,7 +94,7 @@ router.use('/user/', userRouter);
 app.use('/api/', router)
 
 
-app.post('/api/register', async (req, res) => {
+router.post('/register', async (req, res) => {
     const {username, password} = req?.body;
     if (!username || !password || typeof username !== "string" || typeof password !== "string") {
         res.send("Success");
@@ -135,15 +135,15 @@ export const isAdministratorMiddleware = (req: Request, res: Response, next: Nex
     }
 }
 
-app.post("/api/login", passport.authenticate('local'), (req, res) => {
+router.post("/login", passport.authenticate('local'), (req, res) => {
     res.send('success');
 });
 
-app.get('/api/user', (req, res) => {
+router.get('/user', (req, res) => {
     res.send(req.user);
 });
 
-app.get('/api/logout', (req, res) => {
+router.get('/logout', (req, res) => {
     //Rozwiązanie z innej strony z funkcją zwrotną która ma się uruchomić po wykonaniu
     req.logOut(function () {
         console.log('Done logging out.');
@@ -152,7 +152,7 @@ app.get('/api/logout', (req, res) => {
 })
 
 
-app.post("/api/deleteuser", isAdministratorMiddleware, async (req, res) => {
+router.post("/deleteuser", isAdministratorMiddleware, async (req, res) => {
     const {id} = req.body;
     User.findByIdAndDelete(id, (err: Error) => {
         if (err) throw err;
@@ -161,7 +161,7 @@ app.post("/api/deleteuser", isAdministratorMiddleware, async (req, res) => {
 })
 
 
-app.get('/api/getallusers', async (req, res) => {
+router.get('/getallusers', async (req, res) => {
     User.find({}, (err: Error, data: DatabaseUserInterface[]) => {
         if (err) throw err;
         const filteredUsers: UserInterface[] = [];
@@ -177,7 +177,7 @@ app.get('/api/getallusers', async (req, res) => {
     })
 });
 
-
-app.listen(3001, '0.0.0.0', () => {
+//!!TODO Zmnieniony port na localhost
+app.listen(3001, 'localhost', () => {
     console.log('Listening on 0.0.0.0:3001');
 });
