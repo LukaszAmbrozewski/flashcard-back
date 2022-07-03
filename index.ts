@@ -119,6 +119,7 @@ app.post('/api/register', async (req, res) => {
 
 export const isAdministratorMiddleware = (req: Request, res: Response, next: NextFunction) => {
     const {user}: any = req;
+    console.log(user)
 
     if (user) {
         User.findOne({username: user.username}, (err: Error, doc: DatabaseUserInterface) => {
@@ -177,6 +178,6 @@ app.get('/api/getallusers', async (req, res) => {
 });
 
 
-app.listen(3001, 'localhost', () => {
+app.listen(3001, '0.0.0.0', () => {
     console.log('Listening on 0.0.0.0:3001');
 });
