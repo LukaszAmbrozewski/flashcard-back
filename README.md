@@ -23,7 +23,7 @@ Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fi
 
 W przypadku problemów z zalogowaniem dołączam link do filmu na youtube który przedstawia działanie aplikacji: https://youtu.be/tWRV3disiPM
 
-## Rozwój aplikacji oraz poprawa wszystkich błędów planowany jest po ukończeniu etapu Bonusowego, jeżeli oczywiście się do niego dostanę ;) 
+## Rozwój aplikacji oraz poprawa wszystkich błędów planowany jest po ukończeniu etapu Bonusowego.
 
 Pozdrawiam,
 Łukasz Ambrożewski
