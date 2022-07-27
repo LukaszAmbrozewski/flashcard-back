@@ -21,6 +21,8 @@ Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fi
 - funckjonalność zapisywania postępów użytkownika,
 - funkcjonalność wybierania kategorii kart których chcemy się aktualnie uczyć,  
 
+Adres URL strony: https://flashcard.networkmanager.pl/
+
 W przypadku problemów z zalogowaniem dołączam link do filmu na youtube który przedstawia działanie aplikacji: https://youtu.be/tWRV3disiPM
 
 ## Rozwój aplikacji oraz poprawa wszystkich błędów planowany jest po ukończeniu etapu Bonusowego.
