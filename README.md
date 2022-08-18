@@ -1,17 +1,10 @@
 # FLASHCARD
 
-Aplikacja w fazie rozwojowej. Z powodu ograniczonego czasu i konieczności przekazania aplikacji na zaliczenie etapu umieszczona została w dotychczasowej wersji. Część backendowa aplikacji wykorzystuje ExpressJS, TypeScript i bazę MySQL do przechowywania kart oraz PassportJS wraz z MongoDB do uwierzytelniania użytkownika. Część Frontendowa wykorzystuje TypeScript oraz ReactJS. 
+Aplikacja w fazie rozwojowej. Część backendowa aplikacji wykorzystuje ExpressJS, TypeScript i bazę MySQL do przechowywania kart oraz PassportJS wraz z MongoDB do uwierzytelniania użytkownika. Część Frontendowa wykorzystuje TypeScript oraz ReactJS. 
 
 ## Cel aplikacji:
 
 Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fiszek oraz korzystanie z gotowych zbiorów fiszek. Dzięki funkcjonalności dodawania użytkowników oraz logowania każdy użytkownik ma dostęp do własnych fiszek. Każdy użytkownik może również korzystać z ogólnodostępnych fiszek bez logowania. Sekcja nauki wybiera losowo fiszkę i pozwala wyswietlić treść jej odwrotu. 
-
-## Problemy pierwszej wersji aplikacji:
-
-- zdarzają się czasowe problemy z zalogowaniem do aplikacji i z późniejszym przekierowaniem do innych sekcji po zalogowaniu lub rejestracji,
-- słaba walidacja danych,
-- brak testów,
-- brak responsywności strony,
 
 ## Niezrealizowane założenia pierwszej wersji aplikacji:
 
@@ -24,8 +17,6 @@ Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fi
 Adres URL strony: https://flashcard.networkmanager.pl/
 
 W przypadku problemów z zalogowaniem dołączam link do filmu na youtube który przedstawia działanie aplikacji: https://youtu.be/tWRV3disiPM
-
-## Rozwój aplikacji oraz poprawa wszystkich błędów planowany jest po ukończeniu etapu Bonusowego.
 
 Pozdrawiam,
 Łukasz Ambrożewski
