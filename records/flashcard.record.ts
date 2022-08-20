@@ -37,6 +37,16 @@ export class FlashcardRecord implements FlashcardEntity {
         return result
     }
 
+    static async findOneForUserByFront(userId: string, front: string): Promise<FlashcardEntity[]> {
+        const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `front` = :front AND `status`= :status OR `status` = 'public' AND `front` = :front;",
+            {
+                status: userId,
+                front: front,
+            }) as FlashcardRecordResults;
+        return result.length === 0 ? null : result;
+    }
+
+
     static async findOneRandomForUser(userId: string): Promise<FlashcardEntity[]> {
         const [result] = await pool.execute("SELECT * FROM `flashcards` WHERE `status`=:status OR `status` = 'public' ORDER BY RAND() LIMIT 1;", {
             status: userId,
