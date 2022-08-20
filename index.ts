@@ -12,6 +12,7 @@ import bcrypt from 'bcryptjs';
 import User from './utils/User'
 import dotenv from 'dotenv';
 import {DatabaseUserInterface, UserInterface} from "./types";
+import rateLimit from "express-rate-limit";
 
 
 const LocalStrategy = passportLocal.Strategy;
@@ -56,11 +57,10 @@ passport.use(new LocalStrategy((username: string, password: string, done) => {
 
 app.use(json());
 
-//TODO ADD RATE LIMIT
-// app.use(rateLimit({
-//     windowMs: 5 * 60 * 100,
-//     max: 200,
-// }));
+app.use(rateLimit({
+    windowMs: 5 * 60 * 100,
+    max: 500,
+}));
 
 passport.serializeUser((user: DatabaseUserInterface, cb) => {
     cb(null, user._id);

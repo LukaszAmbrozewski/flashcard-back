@@ -40,9 +40,7 @@ export const flashcardRouter = Router()
             if (result === null) {
                 await FlashcardRecord.addFlashcard(front, back, category, userId)
                 res.json('success')
-                console.log('dodano')
             } else {
-                console.log('The same flashcard already exist')
                 res.json('The same flashcard already exist')
             }
         }
