@@ -18,18 +18,18 @@ Aplikacja w fazie rozwojowej. Część backendowa aplikacji wykorzystuje Express
 Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fiszek oraz korzystanie z gotowych zbiorów fiszek. Dzięki funkcjonalności dodawania użytkowników oraz logowania każdy użytkownik ma dostęp do własnych fiszek. Każdy użytkownik może również korzystać z ogólnodostępnych fiszek bez logowania. Sekcja nauki wybiera losowo fiszkę i pozwala wyswietlić treść jej odwrotu. 
 
 ## Screeny:
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2_ilazki.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2a_pes33g.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/1_pwppf6.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/1a_e28kej.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/3_jvu0q6.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/4_nbh3dj.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/5_lrqka3.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/6_anlrvr.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/7_aomr8w.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/8_uhdacp.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/9_qbmysr.jpg" alt="Login View" width="800" height="400"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995791/Flashcard/10_yjgoza.jpg" alt="Login View" width="800" height="400"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2_ilazki.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2a_pes33g.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/1_pwppf6.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/1a_e28kej.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/3_jvu0q6.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/4_nbh3dj.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/5_lrqka3.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/6_anlrvr.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/7_aomr8w.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/8_uhdacp.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/9_qbmysr.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995791/Flashcard/10_yjgoza.jpg" alt="Login View" width="600" height="300"/>
 
 ## Jak uruchomić projekt lokalnie - Backend
 
@@ -104,3 +104,4 @@ Uruchomienie aplikacji frontendowej
 Pozdrawiam,
 Łukasz Ambrożewski
 </p>
+
