@@ -11,11 +11,6 @@ export interface DatabaseUserInterface {
     _id: string;
 }
 
-export interface UserLoginInterface {
-    username: string,
-    password: string,
-}
-
 export interface RegUserEntity {
     id?: string;
     name: string;
