@@ -1,6 +1,6 @@
 # FLASHCARD
 
-Aplikacja w fazie rozwojowej. Część backendowa aplikacji wykorzystuje ExpressJS, TypeScript i bazę MySQL do przechowywania kart oraz PassportJS wraz z MongoDB do uwierzytelniania użytkownika. Część Frontendowa wykorzystuje TypeScript oraz ReactJS. 
+Application in development. Backend use ExpressJS, TypeScript and MySQL database for flashcard and PassportJS with MongoDB to authorize users. Frontend use TypeScript and ReactJS.
 
 <p align="left">
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -13,11 +13,11 @@ Aplikacja w fazie rozwojowej. Część backendowa aplikacji wykorzystuje Express
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>&nbsp; &nbsp;&nbsp;&nbsp; 
 </p>
 
-## Cel aplikacji:
+## Mission of the application:
 
-Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fiszek oraz korzystanie z gotowych zbiorów fiszek. Dzięki funkcjonalności dodawania użytkowników oraz logowania każdy użytkownik ma dostęp do własnych fiszek. Każdy użytkownik może również korzystać z ogólnodostępnych fiszek bez logowania. Sekcja nauki wybiera losowo fiszkę i pozwala wyswietlić treść jej odwrotu. 
+The application is designed to help in learning process. It allows you to create your own flashcards and use ready-made collections of flashcards. Everyone register user can adding new card and has access to their own flashcards. Each user can use publicly available flashcards without logging in. The learning section randomly selects a flashcard and allows to show their reverse.
 
-## Screeny:
+## Screens:
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2_ilazki.jpg" alt="Login View" width="600" height="300"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2a_pes33g.jpg" alt="Login View" width="600" height="300"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/1_pwppf6.jpg" alt="Login View" width="600" height="300"/>
@@ -31,27 +31,27 @@ Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fi
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/9_qbmysr.jpg" alt="Login View" width="600" height="300"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995791/Flashcard/10_yjgoza.jpg" alt="Login View" width="600" height="300"/>
 
-## Jak uruchomić projekt lokalnie - Backend
+## Run project locally - BACKEND
 
-Klonownowanie projektu
+Clone the project
 
 ```bash
   git clone https://github.com/LukaszAmbrozewski/flashcard-back.git
 ```
 
-Zmiana ścieżki w konsoli
+Go to the project directory
 
 ```bash
   cd flashcard-back
 ```
 
-Instalowanie niezbędnych paczek
+Install dependencies
 
 ```bash
   npm install
 ```
 
-Uruchomienie serwera
+Start the server
 
 ```bash
   npm start
@@ -59,49 +59,48 @@ Uruchomienie serwera
 
 
 
-## Jak uruchomić projekt lokalnie - Frontend
+## Run project locally - Frontend
 
-Klonowanie projektu
+Clone the project
 
 ```bash
   git clone https://github.com/LukaszAmbrozewski/flashcard-front.git
 ```
 
-Zmiana ścieżki w konsoli
+Go to the project directory
 
 ```bash
   cd flashcard-front
 ```
 
-Instalowanie niezbędnych paczek
+Install dependencies
 
 ```bash
   npm install
 ```
 
-Uruchomienie aplikacji frontendowej
+Start the server
 
 ```bash
   npm start
 ```
 
 
-## Aplikacja jest aktualnie rozbudowywana o funkcjonalności:
+## The application is currently being expanded to include functionality:
 
-- sekcja statystyki, 
-- panel administratora, 
-- funkcjonalność edycji i usuwania kart, 
-- funckjonalność zapisywania postępów użytkownika,
-- funkcjonalność wybierania kategorii kart których chcemy się aktualnie uczyć,  
-- dark mode dla aplikacji,
+- statistics section, 
+- admin section, 
+- functionality of editing and deleting cards, 
+- funcionality of saving user's progress,
+- the functionality of selecting the categories of cards you want to learn at the moment,  
+- dark mode,
 
-## Dane kontaktowe
+## Contact
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/%C5%82ukasz-ambro%C5%BCewski-943a01222" target="blank"><img align="center" src="https://res.cloudinary.com/headhunter/image/upload/v1660399196/MegaK/NicePng_linkedin-icon-png_99356_lcdscx.png" alt="Łukasz-Ambrożewski" height="25" width="100" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto: lukaszambrozewski@gmail.com" target="blank"><img align="center" src="https://res.cloudinary.com/headhunter/image/upload/v1660400374/MegaK/Daco_4064141_jagvmw.png" alt="Łukasz-Ambrożewski" height="22" width="35" /></a></p>
 <p>
 
 
-Pozdrawiam,
 Łukasz Ambrożewski
 </p>
 
