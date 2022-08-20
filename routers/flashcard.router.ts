@@ -36,8 +36,13 @@ export const flashcardRouter = Router()
     .post('/add', async (req, res) => {
         if (req.body) {
             const {front, back, category, userId} = req.body
-            await FlashcardRecord.addFlashcard(front, back, category, userId)
-            res.json('success')
+            const result = await FlashcardRecord.findOneForUserByFront(userId, front)
+            if (result === null) {
+                await FlashcardRecord.addFlashcard(front, back, category, userId)
+                res.json('success')
+            } else {
+                res.json('The same flashcard already exist')
+            }
         }
     })
 
