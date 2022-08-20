@@ -32,7 +32,7 @@ Aplikacja ma za zadanie ułatwić proces nauki. Pozwala na tworznie własnych fi
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995791/Flashcard/10_yjgoza.jpg" alt="Login View" width="1000" height="500"/>
 
 
-## Niezrealizowane założenia pierwszej wersji aplikacji:
+## Aplikacja jest aktualnie rozbudowywana o funkcjonalności:
 
 - sekcja statystyki, 
 - panel administratora, 
