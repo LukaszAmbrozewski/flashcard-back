@@ -18,18 +18,18 @@ Application in development. Backend use ExpressJS, TypeScript and MySQL database
 The application is designed to help in learning process. It allows you to create your own flashcards and use ready-made collections of flashcards. Everyone register user can adding new card and has access to their own flashcards. Each user can use publicly available flashcards without logging in. The learning section randomly selects a flashcard and allows to show their reverse.
 
 ## Screens:
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2_ilazki.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2a_pes33g.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/1_pwppf6.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/1a_e28kej.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/3_jvu0q6.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/4_nbh3dj.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/5_lrqka3.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/6_anlrvr.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/7_aomr8w.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/8_uhdacp.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/9_qbmysr.jpg" alt="Login View" width="600" height="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995791/Flashcard/10_yjgoza.jpg" alt="Login View" width="600" height="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2_ilazki.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2a_pes33g.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/1_pwppf6.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/1a_e28kej.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/3_jvu0q6.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/4_nbh3dj.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/5_lrqka3.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/6_anlrvr.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/7_aomr8w.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/8_uhdacp.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995790/Flashcard/9_qbmysr.jpg" alt="Login View" width="600"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995791/Flashcard/10_yjgoza.jpg" alt="Login View" width="600"/>
 
 ## Run project locally - BACKEND
 
