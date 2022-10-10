@@ -17,6 +17,9 @@ Application in development. Backend use ExpressJS, TypeScript and MySQL database
 
 The application is designed to help in learning process. It allows you to create your own flashcards and use ready-made collections of flashcards. Everyone register user can adding new card and has access to their own flashcards. Each user can use publicly available flashcards without logging in. The learning section randomly selects a flashcard and allows to show their reverse.
 
+## Frontend:
+https://github.com/LukaszAmbrozewski/flashcard-front
+
 ## Screens:
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2_ilazki.jpg" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1660995789/Flashcard/2a_pes33g.jpg" alt="Login View" width="900"/>
